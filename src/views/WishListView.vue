@@ -95,6 +95,7 @@ onMounted(() => {
     getWishList()
 })
 </script>
+
 <style lang="scss" scoped>
 .main {
     padding: 32px;

@@ -7,12 +7,9 @@
       <div class="center">
         <div class="categories">
           <div class="category" :class="{ 'selected': selectedCategory == null }" @click="selectedCategory = null">All</div>
-          <div class="category" :class="{ 'selected': selectedCategory == 'Men' }" @click="selectedCategory = 'Men'">Men
-          </div>
-          <div class="category" :class="{ 'selected': selectedCategory == 'Women' }" @click="selectedCategory = 'Women'">
-            Women</div>
-          <div class="category" :class="{ 'selected': selectedCategory == 'Kids' }" @click="selectedCategory = 'Kids'">Kids
-          </div>
+          <div class="category" :class="{ 'selected': selectedCategory == 'Men' }" @click="selectedCategory = 'Men'">Men</div>
+          <div class="category" :class="{ 'selected': selectedCategory == 'Women' }" @click="selectedCategory = 'Women'">Women</div>
+          <div class="category" :class="{ 'selected': selectedCategory == 'Kids' }" @click="selectedCategory = 'Kids'">Kids</div>
         </div>
       </div>
       <div class="end">
@@ -35,6 +32,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import Product from '@/components/Product.vue'
 import { ref, computed, onMounted } from 'vue'
